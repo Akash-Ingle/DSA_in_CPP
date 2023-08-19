@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define n 100
+#define n 5
 
 class queue{
     int* arr;
@@ -48,7 +48,10 @@ class queue{
 
 int main(){
     queue q;
-    q.push(1); q.push(2); q.push(3); q.push(4);
+    q.push(1); q.push(2); q.push(3); q.push(4); q.push(5);
+
+    cout<<q.peek()<<endl;
+    q.pop();
 
     cout<<q.peek()<<endl;
     q.pop();
